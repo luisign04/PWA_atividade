@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistências Informática</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>Assistências Técnicas Informática</h1>
+            <p>Encontre as assistências mais proximas de você!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Sua Localização</h2>
+            <p>Para encontrar assistências precisamos de sua localização</p>
+            <div class="status">Aguardando a permissão de localização...</div>
+            <div class="actions">
+                <button id="btnLocalizar">
+                    <i> Usar minha localização</i>
+                </button>
+            </div>
+        </div>
+
+        <div class="card" id="resultado">
+            <h2>Assistências Próximas</h2>
+            <p>Encontramos estas assistências em um raio de 5km:</p>
+
+            <div id="map"></div>
+            <div class="listaLocais" id="listaLocais"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>@ 2025 - Assistências Informatica | Desenvolvido por Luis Augusto <a href="https://github.com/luisign04">luisign04</a></p>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK8oyRIfy1mzgxl0JbmpwsdFzGv1N-hSg&libraries=places,geometry"></script>
+</body>
+</html>
