@@ -76,7 +76,7 @@ function getUserLocation() {
 // Inicializar o mapa do Google
 function initMap() {
     // Criar um mapa centrado na localização do usuário
-    map = new google.maps.Map(document.getElementById('map'), {
+        map = new google.maps.Map(document.getElementById('map'), {
         center: userLocation,
         zoom: 14
     });
