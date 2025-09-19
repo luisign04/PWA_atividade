@@ -4,8 +4,8 @@ const urlsToCache = [
   '/index.html',
   '/styles.css',
   '/app.js',
-  '/icon-192x192.png',
-  '/icon-512x512.png'
+  './icons/icon-192x192.png',
+  './icons/icon-512x512.png',
 ];
 
 self.addEventListener('install', function(event) {
